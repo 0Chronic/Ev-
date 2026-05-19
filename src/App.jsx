@@ -12,14 +12,14 @@ function App() {
     
    ]
 
-   const [heroCount,setHeroCount] = useState (2);
+   const [heroCount,setHeroCount] = useState (0);
    const [playStatus,setPlayStatus] = useState(false);
   
 
 
   return (
     <>
-    <Background/>
+    <Background playStatus={playStatus} heroCount={heroCount}/>
     </>
   )
 }
