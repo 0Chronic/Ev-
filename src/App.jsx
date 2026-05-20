@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import './App.css'
 import Background from './Components/Background/Background';
+import Navbar from './Components/Navbar/Navbar';
+import Hero from './Components/Hero/Hero';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
   return (
     <>
     <Background playStatus={playStatus} heroCount={heroCount}/>
+    <Navbar />
+    <Hero setPlayStatus={setPlayStatus} heroData={heroData} heroCount={heroCount} setHeroCount={setHeroCount} playStatus={playStatus}  />
     </>
   )
 }

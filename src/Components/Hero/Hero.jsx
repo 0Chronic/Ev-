@@ -1,9 +1,11 @@
 import React from 'react'
 import './Hero.css'
 
-const Hero = () => {
+const Hero = ({heroData,setHeroCount,heroCount,setPlayStatus,playStatus}) => {
   return (
-    <div>Hero</div>
+    <div className='hero'>
+
+    </div>
   )
 }
 
